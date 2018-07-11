@@ -6,7 +6,7 @@ The app is generated, with the [Spring Initializr](https://start.spring.io) as a
 
 ---
 
-Since you already have the dummy app, we'll head straight to HowTo secure the dummy app with Keycloak.
+Since you already have the dummy app, we'll head straight to how to secure the dummy app with Keycloak.
 
 Disclaimer: The dummy app won't work in this state, since it hast  already some dependencies that require keycloak to work properly.
 
