@@ -1,12 +1,14 @@
-##HowTo demo case
+##HowTo
 
-First of all i created a dummy app, using the [Spring Initializr](https://start.spring.io).
+First of all we created a dummy app, using the [Spring Initializr](https://start.spring.io).
 
 Generated a __Maven Project__ with __Java__ and Spring Boot __1.5.15__ . The important part was to add the __Keycloak__ dependencie.
 
 ---
 
 Since you already have the dummy app, we'll head straight to HowTo secure the dummy app with Keycloak.
+
+Disclaimer: The dummy app won't work in this state, since i already added some dependencies that require keycloak to work properly.
 
 First of all you have to go to the application.properties and add:
 ```java
