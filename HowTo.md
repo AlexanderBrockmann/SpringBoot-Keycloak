@@ -13,8 +13,8 @@ Disclaimer: The dummy app won't work in this state, since it hast  already some 
 Let's open the app in an IDE, go to the application.properties and add:
 ```java
 	keycloak.auth-server-url=http://localhost:8180/auth
-	keycloak.realm=demo (or what ever name suits you)
-	keycloak.resource=keycloakdemo (choose something fitting)
+	keycloak.realm=demo
+	keycloak.resource=keycloakdemo
 	keycloak.public-client=true
 	
 	keycloak.security-constraints[0].authRoles[0]=user
@@ -49,9 +49,13 @@ Afterwards the Admin Page opens.
 ---
 
 Now you're in the Master realm. You can now create a new realm. Simply hover over Master and a button "Add Realm" should appear.
-Name your new __realm__ "demo" (or whatever fits your usecase). In this showcase you already added the realm demo to your application properties.
+Name your new __realm__ "demo". In this showcase you already added the realm demo to your application properties.
 
-Afterwards you have to create a __client__ for your application. The sidebar has the button "Clients", simply click on "Clients" and then "Create". Choose whatever name suits your application. For this showcase i chose "keycloakdemo".
+Afterwards you have to create a __client__ for your application. The sidebar has the button "Clients", simply click on "Clients" and then "Create". For this showcase we choose "keycloakdemo".
+
+---
+
+Bevore we create a new user, we have to set a default role for new users. 
 
 ---
 
