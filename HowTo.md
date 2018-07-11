@@ -8,7 +8,11 @@ The app is generated, with the [Spring Initializr](https://start.spring.io) as a
 
 Since you already have the dummy app, we'll head straight to HowTo secure the dummy app with Keycloak.
 
+<<<<<<< HEAD:HowTo demo case.md
 Disclaimer: The dummy app won't work in this state, since it hast  already some dependencies that require keycloak to work properly.
+=======
+Disclaimer: The dummy app won't work in this state, since we already added some dependencies that require keycloak to work properly.
+>>>>>>> b5136790b97381af49f25a675ebfe3adb55c6a26:HowTo.md
 
 Let's open the app in an IDE, go to the application.properties and add:
 ```java
