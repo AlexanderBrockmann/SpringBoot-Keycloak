@@ -8,7 +8,7 @@ Generated a __Maven Project__ with __Java__ and Spring Boot __1.5.15__ . The imp
 
 Since you already have the dummy app, we'll head straight to HowTo secure the dummy app with Keycloak.
 
-Disclaimer: The dummy app won't work in this state, since i already added some dependencies that require keycloak to work properly.
+Disclaimer: The dummy app won't work in this state, since we already added some dependencies that require keycloak to work properly.
 
 First of all you have to go to the application.properties and add:
 ```java
