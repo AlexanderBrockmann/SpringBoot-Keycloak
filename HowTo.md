@@ -53,7 +53,7 @@ Afterwards the Admin Page opens.
 Now you're in the Master realm. You can now create a new realm. Simply hover over Master and a button "Add Realm" should appear.
 The realm should be the same as the realm you defined in application properties.
 
-Afterwards you have to create a __client__ for your application. The sidebar has the button "Clients", simply click on "Clients" and then "Create". For this showcase we fill the field ID with keycloakdemo.
+Afterwards you have to create a __client__ for your application. The sidebar has the button "Clients", simply click on "Clients" and then "Create". For this showcase we fill the field ID with keycloakdemo and save.
 
 Although we have to add a Valid Redirect URL. Since the demo runs on the default http://localhost:8080/* we'll add this URL as a Valid Redirect URL.
 
