@@ -2,7 +2,7 @@
 
 The repository [SpringBoot-Keycloak](https://github.com/AlexanderBrockmann/SpringBoot-Keycloak), already contains a demo app.
 
-The app is generated, with the [Spring Initializr](https://start.spring.io) as a __Maven Project__ with __Java__ and Spring Boot __1.5.15__ . The important part was to add the __Keycloak__ dependencie.
+The app is generated, with the [Spring Initializr](https://start.spring.io) as a __Maven Project__ with __Java__ and Spring Boot __1.5.15__ . The important part was to add the __Keycloak__ dependency.
 
 ---
 
@@ -23,9 +23,9 @@ Let's open the app in an IDE, go to the __application.properties__ and add:
 
 ---
 
-Now we'll launch Keycloak. If you havent downloaded it klick [here](https://www.keycloak.org/downloads.html), download the latest version and extract it.
+Now we'll launch Keycloak. If you have not downloaded it click [here](https://www.keycloak.org/downloads.html), download the latest version and extract it.
 
-Go to the bin/ directory of Keycloak, open a terminal and execute:
+Go to the __bin/__ directory of Keycloak, open a terminal and execute:
 
 		Linux / Unix:
 
@@ -55,11 +55,11 @@ The __realm__ should be the same as the __realm__ you defined in application pro
 
 Afterwards you have to create a __client__ for your application. The sidebar has the button "Clients", simply click on "Clients" and then "Create". For this showcase we fill the field ID with __keycloakdemo__ and save.
 
-Although we have to add a Valid Redirect URL. Since the demo runs on the default http://localhost:8080/* we'll add this URL as a Valid Redirect URL.
+Although we have to add a Valid Redirect URL. Since the demo runs on the default http://localhost:8080/* we'll add this URL as a "Valid Redirect URL".
 
 ---
 
-Before we create a new __user__, we have to set a default role for new users. To do this we head to roles, the button can be found in the sidebar. Now we add a __role__ called "user". We don't add a description. Afterwards we head back to the main window of roles and click the tab "Default Roles", where we simply add the role "user" to realm default roles. Now every new __user__ has the role "user".
+Before we create a new __user__, we have to set a default role for new users. To do this we head to "Roles", the button can be found in the sidebar. Now we add a __role__ called "user". We don't add a description. Afterwards we head back to the main window of roles and click the tab "Default Roles", where we simply add the role "user" to realm default roles. Now every new __user__ has the role "user".
 
 ---
 
