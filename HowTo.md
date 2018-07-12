@@ -45,7 +45,7 @@ Keycloak has no admin account by default. Therefore you have
 to create an admin account on the welcome page.
 
 
-Once you've created an admin account. You can log in to the Admin Console by clicking on the Administration Console link or by using the [http://localhost:8080/auth/admin/](http://localhost:8180/auth/admin/) URL.
+Once you've created an admin account. You can log in to the Admin Console by clicking on the Administration Console link or by using the [http://localhost:8180/auth/admin/](http://localhost:8180/auth/admin/) URL.
 Afterwards the Admin Page opens.
 
 ---
