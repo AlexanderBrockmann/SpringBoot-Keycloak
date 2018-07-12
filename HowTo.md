@@ -45,7 +45,7 @@ Keycloak has no admin account by default. Therefore you have
 to create an admin account on the welcome page.
 
 
-Once you've created an admin account. You can log in to the Admin Console by clicking on the Administration Console link or by using the [http://localhost:8080/auth/admin/](http://localhost:8080/auth/admin/) URL.
+Once you've created an admin account. You can log in to the Admin Console by clicking on the Administration Console link or by using the [http://localhost:8080/auth/admin/](http://localhost:8180/auth/admin/) URL.
 Afterwards the Admin Page opens.
 
 ---
@@ -54,6 +54,8 @@ Now you're in the Master realm. You can now create a new realm. Simply hover ove
 The realm should be the same as the realm you defined in application properties.
 
 Afterwards you have to create a __client__ for your application. The sidebar has the button "Clients", simply click on "Clients" and then "Create". For this showcase we fill the field ID with keycloakdemo.
+
+Although we have to add a Valid Redirect URL. Since the demo runs on the default http://localhost:8080/* we'll add this URL as a Valid Redirect URL.
 
 ---
 
