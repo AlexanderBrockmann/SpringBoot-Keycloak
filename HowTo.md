@@ -8,7 +8,7 @@ The app is generated, with the [Spring Initializr](https://start.spring.io) as a
 
 Since you already have the dummy app, we'll head straight to how to secure the dummy app with Keycloak.
 
-Disclaimer: The dummy app won't work in this state, since it hast  already some dependencies that require keycloak to work properly.
+Disclaimer: The demo app won't work in this state, since it has no login.
 
 Let's open the app in an IDE, go to the application.properties and add:
 ```java
@@ -27,16 +27,18 @@ Now we'll launch Keycloak. If you havent downloaded it klick [here](https://www.
 
 Go to the bin/ directory of Keycloak, open a terminal and execute:
 
-		Linux/Unix:
-			$ ./standalone.sh
-		
+		Linux / Unix:
+
+			$ ./standalone.sh -Djboss.socket.binding.port-offset=100
+
 		Windows:
-			> .\standalone.bat
+
+			> .\standalone.bat -Djboss.socket.binding.port-offset=100
 			
 ---
 
 After the server boots, open your browser and go the
-[http://localhost:8080/auth](http://localhost:8080/auth) URL.
+[http://localhost:8180/auth](http://localhost:8180/auth) URL.
 
 
 Keycloak has no admin account by default. Therefore you have
@@ -49,38 +51,24 @@ Afterwards the Admin Page opens.
 ---
 
 Now you're in the Master realm. You can now create a new realm. Simply hover over Master and a button "Add Realm" should appear.
-Name your new __realm__ "demo". In this showcase you already added the realm demo to your application properties.
+The realm should be the same as the realm you defined in application properties.
 
-Afterwards you have to create a __client__ for your application. The sidebar has the button "Clients", simply click on "Clients" and then "Create". For this showcase we choose "keycloakdemo".
+Afterwards you have to create a __client__ for your application. The sidebar has the button "Clients", simply click on "Clients" and then "Create". For this showcase we fill the field ID with keycloakdemo.
 
 ---
 
-Bevore we create a new user, we have to set a default role for new users. 
+Before we create a new user, we have to set a default role for new users. To do this we head to roles, the button can be found in the sidebar. Now we add a role called user. We don't add a description. Afterwards we head back to the main window of roles and click the tab default roles, where we simply add user to realm default roles. Now every new user has the role "user".
 
 ---
 
 Furthermore we have to create a new user. Click on "Users" and you'll get to the administration for users.
 
-Create a new user by clicking on the Add user button. Give your new user an appropriate name, i chose testuser. You can altough give him a first and last name. Afterwards save and head to the tab "Credentials".
+Create a new user by clicking on the Add user button. Give your new user an appropriate username, first name and last name. Afterwards save and head to the tab "Credentials".
 
 You have to give your new user a password. Although you can decide wether it is temporary or not. If it is temporary the user has to set a new password once he's logged in.
 
 ---
 
-Now that we've completed these steps, we close Keycloak and launch it again:
-
-		Linux / Unix:
-
-			$ ./standalone.sh -Djboss.socket.binding.port-offset=100
-
-		Windows:
-
-			> .\standalone.bat -Djboss.socket.binding.port-offset=100
-
-Once it's launched, Keycloak has the [http://localhost:8180/](http://localhost:8180/) address.
-
----
-
-Now the login page of the dummy page should be secured by Keycloak.
+Now the login page of the demo app should be secured by Keycloak.
 
 Launch your dummy app and see for yourself.
