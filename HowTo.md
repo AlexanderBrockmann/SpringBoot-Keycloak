@@ -1,4 +1,4 @@
-##HowTo
+## HowTo
 
 The repository [SpringBoot-Keycloak](https://github.com/AlexanderBrockmann/SpringBoot-Keycloak), already contains a demo app.
 
